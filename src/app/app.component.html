@@ -1,12 +1,12 @@
 <!--TEMPLATE NAVBAR-->
 <div class="container-fluid header">
-  <nav class="navbar navbar-expand-md fixed-top" style="background-color: #ffffff;">
+  <nav class="navbar navbar-expand-md fixed-top">
     <!--HAMBURGER MENU-->
     <a class="navbar-toggler" data-toggle="dropdown" data-target="#collapsibleNavbar">
       <label class="menu-icon"><span class="nav-icon"></span></label>
     </a>
-    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
-      <ul class="navbar-nav d-flex justify-content-center">
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav d-flex">
         <li *ngFor="let item of menu">
           <div routerLink="">
             <p>{{ item }}</p>
@@ -16,7 +16,6 @@
     </div>
   </nav>
 </div>
-<div style="height: 60px;"></div>
 
 <!--ROUTER PER NAVIGAZIONE-->
 <router-outlet></router-outlet>

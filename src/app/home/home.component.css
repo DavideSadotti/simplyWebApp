@@ -1,0 +1,26 @@
+.jumbotron{
+    height: 700px;
+    background-image: url('./../../assets/smartphoneImg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box{
+    width: 30%;
+    margin: 10px;
+}
+
+.box{
+    transition: all 0.4s ease-in-out;
+}
+
+.box:hover{
+    transform: scale(1.1);
+}
+
+.box img{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    width: 100%;
+}

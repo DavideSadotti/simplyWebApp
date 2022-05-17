@@ -1,9 +1,7 @@
-.header{
-    background-color: #ffffff;
-}
-
 .navbar {
     padding: 0;
+    color: #ffffff;
+    text-transform: uppercase;
 }
 
 /*STYLE E ANIMATION DELL'HAMBURGER MENU*/
@@ -71,13 +69,10 @@ li{
 
 li > div{
     padding: 10px 20px;
-    background-color: #ffffff;
-    transition: 0.4s;
+    transition: 0.3s;
     display: flex;
-    align-items: center;
 }
 
 li > div:hover{
-    background-color: #e0e0e0;
-    color: white;
+    transform: scale(1.2);
 }

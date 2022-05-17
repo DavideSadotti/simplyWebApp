@@ -8,9 +8,11 @@ export class ProductsListService {
 
   constructor(private http: HttpClient) { }
 
+  private limit = 20;
+
   private apiListUrl = "https://dummyjson.com/products";
 
   getList(){
-    return this.http.get(this.apiListUrl);
+    return this.http.get(this.apiListUrl + '?limit=' + this.limit);
   }
 }

@@ -1,3 +1,19 @@
-<ul>
-    <li *ngFor="let product of products">{{ product.title }}</li>
-</ul>
+<div class="container-fluid p-0">
+    <div class="jumbotron">
+    </div>
+</div>
+
+<div class="container-fluid">
+    <h4>Lista dei prodotti</h4>
+    <div class="productsList">
+        <div *ngFor="let product of products" class="box">
+            <a class="router" routerLink="/product/{{ product.id }}">
+                <img src="{{ product.thumbnail }}">
+                <div class="boxText">
+                    <p>{{ product.title }}</p>
+                    <p>{{ product.price }}</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
