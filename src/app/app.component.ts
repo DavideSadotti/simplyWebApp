@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'simplyWebApp';
+
+  //ARRAY CONTENENTE IL NOME DELLE PAGINE
+  menu = [
+    'demo',
+    'shop',
+    'product',
+    'lookback',
+    'blog'
+  ]
 }
