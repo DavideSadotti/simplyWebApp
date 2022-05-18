@@ -3,17 +3,59 @@
     </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid p-0">
     <h4>Lista dei prodotti</h4>
+    <hr>
+    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
     <div class="productsList">
         <div *ngFor="let product of products" class="box">
             <a class="router" routerLink="/product/{{ product.id }}">
                 <img src="{{ product.thumbnail }}">
                 <div class="boxText">
                     <p>{{ product.title }}</p>
-                    <p>{{ product.price }}</p>
+                    <small>€ {{ product.price }}</small>
                 </div>
             </a>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid p-0">
+    <div class="review">
+        <h4>Ultime recensioni</h4>
+        <hr>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
+        <div class="productsList">
+            <div *ngFor="let review of reviews" class="box">
+                <img src="{{ review.image }}">
+                <div class="boxReview">
+                    <small>By {{ review.writer }} on {{ review.date }}</small>
+                    <h5>{{ review.title }}</h5>
+                    <small>{{ review.text }}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="newsletter">
+    <h4>Ultime recensioni</h4>
+    <hr>
+    <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h6>
+    <div>
+        <input type="text" name="" id="" placeholder="Inserisci la tua Email">
+        <button>Invia</button>
+    </div>
+</div>
+
+<div class="service">
+    <div>
+        <div *ngFor="let service of services">
+            <img src="{{ service.icon }}" alt="">
+            <div>
+                <p>{{ service.title }}</p>
+                <small>{{ service.text }}</small>
+            </div>
         </div>
     </div>
 </div>

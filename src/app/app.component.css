@@ -76,3 +76,29 @@ li > div{
 li > div:hover{
     transform: scale(1.2);
 }
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+.footer h5, .footer h3{
+    height: 35px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer div{
+    margin: 0 15px;
+}
+
+.footer ul{
+    padding: 0;
+}
+
+.footer li{
+    font-size: 11px;
+    margin: 5px 0;
+}
