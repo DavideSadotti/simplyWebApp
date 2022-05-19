@@ -15,4 +15,9 @@ export class ProductsListService {
   getList(){
     return this.http.get(this.apiListUrl + '?limit=' + this.limit);
   }
+
+  getDetail(id: string){
+    return this.http.get(this.apiListUrl + '/' + id);
+  }
+
 }

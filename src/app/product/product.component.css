@@ -1,0 +1,110 @@
+.boxDetail{
+    margin: 50px 0;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.boxDetail > div{
+    margin: 0 20px;
+}
+
+.detail > div{
+    margin: 20px 0;
+}
+
+.detail > div button{
+    border-radius: 50%;
+    border: 0.5px solid #868686;
+    height: 26px;
+    width: 26px;
+    padding: 0;
+}
+
+.detail > div button:focus{
+    border: 0.5px solid black;
+}
+
+.detail > div button div{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin-top: 0.5px;
+    margin-left: 1.8px;
+}
+
+.boxInformation ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.boxInformation li{
+    margin: 0 20px;
+}
+
+.boxInformation div{
+    margin: 0 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.boxInformation p{
+    text-align: center;
+    margin: 20px;
+    
+}
+
+.boxInformation img, .tShirt ul{
+    width: 30%;
+    margin: 10px;
+}
+
+.tShirt{
+    flex-wrap: nowrap !important;
+    padding-top: 40px;
+}
+
+.tShirt ul{
+    flex-direction: column;
+}
+
+.tShirt li{
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+
+.tShirt ul img{
+    width: 30px;
+    height: 30px;
+}
+
+.alsoLike{
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.alsoLike h5{
+    font-weight: bold;
+}
+
+.alsoLike > div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.alsoLike > div > div{
+    margin: 20px 20px 0;
+}
+
+.alsoLike img{
+    height: 250px;
+}

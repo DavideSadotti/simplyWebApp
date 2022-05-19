@@ -1,1 +1,100 @@
-<p>product works!</p>
+<div class="container-fluid p-0">
+    <div *ngFor="let detail of details" class="boxDetail">
+        <div>
+            <img src="{{ detail.thumbnail }}" alt="">
+        </div>
+        <div class="detail">
+            <h4>{{ detail.title }}</h4>
+            <p>€ {{ detail.price }}</p>
+            <p>{{ detail.descriptiom }}</p>
+            <div *ngIf="detail.color">
+                <h5>Color</h5>
+                <button>
+                    <div  [ngStyle]="{'background': detail.color.colorOne}"></div>
+                </button>
+                <button style="margin: 0 5px;">
+                    <div  [ngStyle]="{'background': detail.color.colorTwo}"></div>
+                </button>
+                <button>
+                    <div  [ngStyle]="{'background': detail.color.colorThree}"></div>
+                </button>
+            </div>
+            <div>
+                <h5>Size</h5>
+                <button>S</button>
+                <button style="margin: 0 5px;">M</button>
+                <button>L</button>
+            </div>
+            <div class="category">
+                <p>Category: {{ detail.category }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="boxInformation">
+        <ul>
+            <li *ngFor="let info of information">{{ info }}</li>
+        </ul>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc convallis ex quis congue posuere. Nam ac urna nec nibh pharetra aliquam id quis erat. Morbi vel volutpat odio, vel efficitur libero. Vivamus facilisis ex quis ipsum semper tincidunt. Quisque sagittis euismod eros. Fusce consequat est non dui ultricies, eget hendrerit ante tempus. Nunc posuere feugiat sapien, sed laoreet velit viverra ac.</p>
+            <img src="./../../assets/infoOne.jpg" alt="">
+            <img src="./../../assets/infoTwo.jpg" alt="">
+            <img src="./../../assets/infoThree.jpg" alt="">
+        </div>
+        <div class="tShirt">
+            <ul class="p-0">
+                <li>
+                    <p>Rain & Water Resistant</p>
+                    <img src="./../../assets/pioggia.png" alt="">
+                </li>
+                <li>
+                    <p>UV Resistant Coatings</p>
+                    <img src="./../../assets/sole.png" alt="">
+                </li>
+                <li>
+                    <p>Corrosion Resistance to Sea water</p>
+                    <img src="./../../assets/mare.png" alt="">
+                </li>
+            </ul>
+            <img src="./../../assets/t-shirt.jpg" alt="">
+            <ul class="p-0">
+                <li>
+                    <img src="./../../assets/novernice.png" alt="">
+                    <p>Load-free Powdercoat Finish</p>
+                </li>
+                <li>
+                    <img src="./../../assets/spill.png" alt="">
+                    <p>Resistant to Spills</p>
+                </li>
+                <li>
+                    <img src="./../../assets/riciclo.png" alt="">
+                    <p>Recyclable Aluminium Frame</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="alsoLike">
+        <h5>You may also like</h5>
+        <div>
+            <div>
+                <img src="./../../assets/alsoOne.jpg" alt="">
+                <p>Ianweh Yireh</p>
+                <small>€ 59.00</small>
+            </div>
+            <div>
+                <img src="./../../assets/alsoTwo.jpg" alt="">
+                <p>iPad</p>
+                <small>€ 359.00</small>
+            </div>
+            <div>
+                <img src="./../../assets/alsoThree.jpg" alt="">
+                <p>iPhone</p>
+                <small>€ 999.00</small>
+            </div>
+            <div>
+                <img src="./../../assets/alsoFour.jpg" alt="">
+                <p>MacBook</p>
+                <small>€ 1239.00</small>
+            </div>
+        </div>
+    </div>
+</div>
